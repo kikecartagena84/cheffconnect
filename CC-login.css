@@ -1,0 +1,16 @@
+.box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid;
+    color:#FFFFFF 
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:focus + label {
+top:-5px;
+}

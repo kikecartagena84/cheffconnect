@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <img src="img/chefconnect_transparent.png" alt="logo">
+
+        <div>
+
+            <ul>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="#">Desafíos</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="background_recipe">
+
+
+        <div id="textheader_recipes">
+
+
+
+
+
+        </div>
+
+
+        <div id="content">
+            <div id="elements_recipes">
+                <div class="filter-section">
+                    <form class="filter-form">
+
+                        <input type="search" placeholder="Busca tu Receta" id="Buscador" />
+                        <br><br><br>
+
+                        <label for="food-filter">Tipo de Dieta:</label>
+                        <select id="food-filter">
+                            <option value="all">Todas</option>
+                            <option value="Omnivora">Omnivora</option>
+                            <option value="Vegana">Vegana</option>
+                            <option value="Meditteranea">Meditteranea</option>
+                            <option value="Calorica">Calorica</option>
+                            <option value="Alta en Fibra">Alta en Fibra</option>
+                            <option value="Libre de Gluten">Libre de Gluten</option>
+                </div>
+
+
+            </div>
+            br*10
+            <div>
+
+
+                <div>
+
+
+                    <h3>Tiempo de preparación en minutos</h3>
+                    <span id="rangeValue">0</span>
+                    <Input class="range" type="range" name "" value="0" min="0" max="1000"
+                        onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+                <script type="text/javascript">
+                    function rangeSlide(value) {
+                        document.getElementById('rangeValue').innerHTML = value;
+                    }
+                </script>
+
+
+
+                <div id="containerrecipes">
+                    <h1>Torta de Vainilla</h1>
+                    <img src="https://images.pexels.com/photos/221083/pexels-photo-221083.jpeg?auto=compress&cs=tinysrgb&w=504&h=300&dpr=1"
+                        alt="">
+
+
+
+                    <h2>Receta</h2>
+
+                    
+                    <bajar id="bajar">
+                        <nav>
+                            <ul id="content-recipes">
+                                <a href="#page-1">Ingredientes</a></li>
+                                <a href="#page-2">Preparación</a></li>
+                                <a href="#page-3">Montaje</a></li>
+                            
+                            
+                            
+                        </ul>
+                        </nav>
+
+                        <scroll-container>
+                            <scroll-page id="page-1">
+                                <ul>
+                                <h3>Ingredientes</h3>
+
+                                <h3>Para la masa</h3>
+                                    <li>1 1/2 tazas de harina de trigo.</li>
+                                    <li>1/2 taza de mantequilla (a temperatura ambiente).</li>
+                                    <li>1/4 de taza de azúcar.</li>
+                                    <li>1 huevo.</li>
+                                    <li>1 cucharadita de esencia de vainilla.</li>
+                                    <li>Una pizca de sal.</li>
+                                </ul>
+                                <h3>Para el relleno</h3>
+                                <ul>
+                                    <li>2 tazas de leche.</li>
+                                    <li>1/2 taza de azúcar.</li>
+                                    <li>1/3 de taza de maicena.</li>
+                                    <li>4 yemas de huevo.</li>
+                                    <li>2 cucharaditas de esencia de vainilla.</li>
+                                    <li>2 cucharadas de mantequilla.</li>
+                                </ul>
+                            </scroll-page>
+                            <scroll-page id="page-2">
+                                <h3>Preparación del relleno</h3>
+
+                                <h4>En una cacerola, calienta la leche a fuego medio sin que llegue a hervir.
+                                    En un tazón aparte, mezcla el azúcar y la maicena.
+                                    Agrega las yemas de huevo a la mezcla de azúcar y maicena y bate hasta que la mezcla
+                                    esté suave.
+                                    Vierte la leche caliente en la mezcla de huevo, azúcar y maicena, batiendo
+                                    constantemente.
+                                    Vuelve a verter la mezcla en la cacerola y cocínala a fuego medio-bajo, revolviendo
+                                    constantemente hasta que espese.
+                                    Retira la cacerola del fuego y agrega la esencia de vainilla y la mantequilla.
+                                    Mezcla hasta que la mantequilla se derrita y la mezcla esté suave. Deja enfriar.
+                                </h4>
+                            </scroll-page>
+
+                            <scroll-page id="page-3">
+                                <h3>Montaje de la tarta</h3>
+
+                                <h4>Precalienta el horno a 180°C (350°F).
+                                    Estira la masa enfriada en una superficie enharinada y forra un molde para tarta.
+                                    Pincha el fondo de la masa con un tenedor.
+                                    Vierte el relleno enfriado sobre la masa.
+                                    Hornea la tarta en el horno precalentado durante aproximadamente 30-35 minutos, o
+                                    hasta que esté dorada.
+                                    Deja enfriar antes de servir.
+                                    ¡Espero que disfrutes de esta tarta de vainilla! Puedes personalizarla agregando
+                                    frutas frescas, crema batida o cualquier otro adorno que desees.
+                                </h4>
+                            </scroll-page>
+                        </scroll-container>
+
+
+                </div>
+
+            </div>
+        </div>

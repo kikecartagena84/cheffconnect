@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <img src="img/chefconnect_transparent.png" alt="logo">
+
+        <div>
+
+            <ul>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="#">Desafíos</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="background_recepies">
+
+
+        <div id="textheader">
+
+            <h1>Recetas</h1>
+
+
+
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="elements_recipes">
+            <div class="filter-section">
+                <form class="filter-form">
+
+                    <input type="search" placeholder="Busca tu Receta" id="Buscador" />
+                    <br><br><br>
+
+                    <label for="food-filter">Tipo de Dieta:</label>
+                    <select id="food-filter">
+                        <option value="all">Todas</option>
+                        <option value="Omnivora">Omnivora</option>
+                        <option value="Vegana">Vegana</option>
+                        <option value="Meditteranea">Meditteranea</option>
+                        <option value="Calorica">Calorica</option>
+                        <option value="Alta en Fibra">Alta en Fibra</option>
+                        <option value="Libre de Gluten">Libre de Gluten</option>
+            </div>
+            </select>
+            <div>
+                <br><br><br>
+
+                <h3>Tiempo de preparación en minutos</h3>
+                <span id="rangeValue">0</span>
+                <Input class="range" type="range" name "" value="0" min="0" max="1000" onChange="rangeSlide(this.value)"
+                    onmousemove="rangeSlide(this.value)"></Input>
+            </div>
+            
+            <script type="text/javascript">
+                function rangeSlide(value) {
+                    document.getElementById('rangeValue').innerHTML = value;
+                }
+            </script>
+
+        </div>
+
+   
+<div id="recipes_table">
+    <div class="recipes-styles">
+        <div class="recipes-card">
+            <img src="img/recetas copia.png" alt="recipes 1">
+            <div>
+                <h2>Torta de Vainilla</h2>
+                <p>Tipo de dieta: Vegana</p>
+                <p>Tiempo de preparación:180 Minutos</p>
+                <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                <button class="join-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipes-styles">
+        <div class="recipes-card">
+            <img src="img/recetas copia.png" alt="recipes 2">
+            <div>
+                <h2>Torta de Vainilla</h2>
+                <p>Tipo de dieta: Vegana</p>
+                <p>Tiempo de preparación:180 Minutos</p>
+                <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                <button class="join-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+    <div class="recipes-styles">
+        <div class="recipes-card">
+            <img src="img/recetas copia.png" alt="recipes 1">
+            <div>
+                <h2>Torta de Vainilla</h2>
+                <p>Tipo de dieta: Vegana</p>
+                <p>Tiempo de preparación:180 Minutos</p>
+                <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                <button class="join-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipes-styles">
+        <div class="recipes-card">
+            <img src="img/recetas copia.png" alt="recipes 2">
+            <div>
+                <h2>Torta de Vainilla</h2>
+                <p>Tipo de dieta: Vegana</p>
+                <p>Tiempo de preparación:180 Minutos</p>
+                <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                <button class="join-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+    <div class="recipes-styles">
+        <div class="recipes-card">
+            <img src="img/recetas copia.png" alt="recipes 1">
+            <div>
+                <h2>Torta de Vainilla</h2>
+                <p>Tipo de dieta: Vegana</p>
+                <p>Tiempo de preparación:180 Minutos</p>
+                <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                <button class="join-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipes-styles">
+        <div class="recipes-card">
+            <img src="img/recetas copia.png" alt="recipes 2">
+            <div>
+                <h2>Torta de Vainilla</h2>
+                <p>Tipo de dieta: Vegana</p>
+                <p>Tiempo de preparación:180 Minutos</p>
+                <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                <button class="join-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+    <footer id="footer">
+        <ul>
+            <li> <a href="#">Perfil</a></li>
+            <li> <a href="#">Términos y Condiciones</a></li>
+            <li> <a href="#">Recetas</a></li>
+            <li> <a href="#">Desafíos</a></li>
+            <li> <a href="#">Página de Ayuda o Preguntas Frecuentes (FAQ)</a></li>
+
+
+        </ul>
+    </footer>
+
+</body>
+
+</html>
